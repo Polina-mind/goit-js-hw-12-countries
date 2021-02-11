@@ -1,0 +1,31 @@
+{{!-- {​​​
+capital: "Kabul"​​​,
+flag: "https://restcountries.eu/data/afg.svg"​​​,
+languages: 
+    {        ​​
+        name: "Swedish",        ​​​​​
+        nativeName: "svenska",
+    }    ​​​
+name: "Afghanistan"​​​,
+population: 27657145,
+} --}}
+
+{{#each this}}
+<h2 class="country-name">{{name}}</h2>
+
+<article class="country-article">
+    <ul class="country-items">
+        <li class="country-item">Capital: <span>{{capital}}</span></li>
+        <li class="country-item">Population: <span>{{population}}</span></li>
+        <li class="country-item">Languages:
+            <ul class="languages-items">
+                {{#each languages}}
+                <li class="language"><span>{{name}}</span></li>
+                {{/each}}
+            </ul>
+        </li>
+    </ul>
+    <img src="{{flag}}" alt="{{name}} flag" class="flag">
+
+</article>
+{{/each}}
