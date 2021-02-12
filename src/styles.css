@@ -94,7 +94,7 @@ input {
 
 @media screen and (max-width: 480px) {
   input {
-    width: 370px;
+    width: 350px;
   }
 }
 
@@ -127,6 +127,12 @@ input {
   display: inline-flex;
   margin-left: 0;
   justify-content: center;
+}
+
+@media screen and (max-width: 480px) {
+  .country-article {
+    display: inline-block;
+  }
 }
 
 .country-name {
@@ -190,6 +196,6 @@ span {
 @media screen and (max-width: 480px) {
   .flag {
     margin-left: 10px;
-    width: 170px;
+    width: 300px;
   }
 }
