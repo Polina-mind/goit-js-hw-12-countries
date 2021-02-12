@@ -36,6 +36,8 @@ function fetchCountries(searchQuery) {
           delay: 3000,
         });
 
+        refs.countryOption.innerHTML = '';
+
         // refs.countryOption.innerHTML =
         //   '<p class="helper">Too many matches found. Please enter a more specific query!</p>';
       } else {
@@ -44,6 +46,8 @@ function fetchCountries(searchQuery) {
           type: 'error',
           delay: 3000,
         });
+
+        refs.countryOption.innerHTML = '';
 
         // refs.countryOption.innerHTML =
         //   '<p class="helper">Incorrect input. Please try again!</p>';
