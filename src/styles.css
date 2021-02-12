@@ -150,6 +150,8 @@ input {
 
 .country-items {
   margin-top: 0;
+  padding: 0;
+  list-style: none;
   text-align: left;
 }
 
@@ -174,7 +176,8 @@ span {
 
 .languages-items {
   margin-top: 0;
-  list-style: circle;
+  margin-left: -10px;
+  list-style: initial;
 }
 
 .language {
