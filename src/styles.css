@@ -40,6 +40,12 @@ h1 {
   animation: changeColor 5s cubic-bezier(0.4, 0, 0.2, 1) infinite;
 }
 
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 20px;
+  }
+}
+
 @keyframes changeColor {
   0% {
     color: rgb(71, 25, 114);
@@ -69,15 +75,27 @@ h2 {
   font-size: 16px;
 }
 
+@media screen and (max-width: 480px) {
+  h2 {
+    font-size: 14px;
+  }
+}
+
 .input-block {
   margin-top: 0;
   margin-bottom: 25px;
 }
 
 input {
-  width: 375px;
+  width: 450px;
   border: 2px solid rgb(153, 153, 158);
   border-radius: 5px;
+}
+
+@media screen and (max-width: 480px) {
+  input {
+    width: 350px;
+  }
 }
 
 .text {
@@ -118,7 +136,14 @@ input {
   font-size: 24px;
 }
 
+@media screen and (max-width: 480px) {
+  .country-name {
+    font-size: 18px;
+  }
+}
+
 .country-items {
+  margin-top: 0;
   text-align: left;
 }
 
@@ -128,6 +153,13 @@ input {
 
   font-size: 18px;
   font-weight: 700;
+}
+
+@media screen and (max-width: 480px) {
+  .country-item {
+    font-size: 14px;
+    font-weight: 700;
+  }
 }
 
 span {
@@ -143,8 +175,20 @@ span {
   margin-top: 10px;
 }
 
+@media screen and (max-width: 480px) {
+  .language {
+    font-weight: 12px;
+  }
+}
+
 .flag {
   margin-top: 0;
   margin-left: 20px;
   width: 250px;
+}
+
+@media screen and (max-width: 480px) {
+  .flag {
+    width: 200px;
+  }
 }
