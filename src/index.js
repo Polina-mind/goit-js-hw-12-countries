@@ -1,6 +1,6 @@
 var debounce = require('lodash.debounce');
 import fetchCountries from './js/fetchCountries';
-import './styles.scss';
+import './styles.css';
 
 const refs = {
   nameInput: document.querySelector('#country-input'),
