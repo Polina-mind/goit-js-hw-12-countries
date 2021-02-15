@@ -114,18 +114,23 @@ input {
 }
 
 .countries {
-  margin-left: 38%;
-  text-align: left;
+  margin-left: 45%;
+}
+
+@media screen and (max-width: 480px) {
+  .countries {
+    margin-left: 40%;
+  }
 }
 
 .country {
   margin-top: 0;
   margin-bottom: 10px;
+  text-align: left;
 }
 
 .country-article {
   display: inline-flex;
-  margin-left: 0;
   justify-content: center;
 }
 
